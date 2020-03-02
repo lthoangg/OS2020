@@ -1,0 +1,54 @@
+Input: echo hello world
+Output: hello world
+
+Input date
+Output:
+Mon Mar  2 16:03:58 +07 2020
+
+Input: passwd
+Output:
+Changing password for lthoangg.
+(current) UNIX password:
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+
+Input: hostname
+Output: LeTrongHoang
+
+Input: arch
+Output: x86_64
+
+Input: uname -a
+Output:
+Linux LeTrongHoang 4.4.0-18362-Microsoft #476-Microsoft Fri Nov 01 16:53:00 PST 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+Input: dmesg
+Output:
+[    0.019010]  Microsoft 4.4.0-18362.476-Microsoft 4.4.35
+
+Input: uptime
+Output:
+ 16:08:13 up 13 min,  0 users,  load average: 0.52, 0.58, 0.59
+ 
+ Input: whoami
+ Output: lthoangg
+ 
+ Input: who
+ Output:
+ 
+ Input: id
+ Output:
+ uid=1000(lthoangg) gid=1000(lthoangg) groups=1000(lthoangg),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),108(lxd),114(netdev)
+ 
+ Input: last
+ Output:
+ wtmp begins Wed Feb 26 23:59:13 2020
+ 
+ Input: finger
+ Output: No one logged on.
+ 
+ Input: w
+ Output:
+  16:12:06 up 17 min,  0 users,  load average: 0.52, 0.58, 0.59
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
