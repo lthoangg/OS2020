@@ -1,0 +1,50 @@
+List all files in current directory containing <List> in their names:
+```bash
+lthoangg@LeTrongHoang:~$ cd /mnt/c/Users/lthoangg/Onedrive/CODE/TestHtml
+lthoangg@LeTrongHoang:/mnt/c/Users/lthoangg/Onedrive/CODE/TestHtml$ ls | grep list
+list.html
+```
+
+Count how many lines that /etc/passwd has:
+```bash
+lthoangg@LeTrongHoang:/mnt/c/Users/lthoangg/Onedrive/CODE/TestHtml$ wc -l /etc/passwd
+30 /etc/passwd
+```
+
+Check how much memory that your machine has, not free memmory:
+```bash
+lthoangg@LeTrongHoang:/mnt/c/Users/lthoangg/Onedrive/CODE/TestHtml$ free total
+              total        used        free      shared  buff/cache   available
+Mem:        8257904     4607636     3420916       17720      229352     3516536
+Swap:      12662088       67088    12595000
+```
+
+Find how many logical core that your CPU has:
+```bash
+processor       : 3
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 61
+model name      : Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz
+stepping        : 4
+microcode       : 0xffffffff
+cpu MHz         : 2594.000
+cache size      : 256 KB
+physical id     : 0
+siblings        : 4
+core id         : 1
+cpu cores       : 2
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 6
+wp              : yes
+```
+
+Count how many .jpg files that you have in your photo directory:
+```bash
+lthoangg@LeTrongHoang:/mnt$ cd c/users/lthoangg/Downloads
+lthoangg@LeTrongHoang:/mnt/c/users/lthoangg/Downloads$ find *.JPG | wc -l
+1
+```
