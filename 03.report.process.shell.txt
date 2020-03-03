@@ -1,0 +1,282 @@
+List all your running processes:
+```bash
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 10:28 ?        00:00:01 /sbin/init splash
+root         2     0  0 10:28 ?        00:00:00 [kthreadd]
+root         4     2  0 10:28 ?        00:00:00 [kworker/0:0H]
+root         6     2  0 10:28 ?        00:00:00 [mm_percpu_wq]
+root         7     2  0 10:28 ?        00:00:00 [ksoftirqd/0]
+root         8     2  0 10:28 ?        00:00:00 [rcu_sched]
+root         9     2  0 10:28 ?        00:00:00 [rcu_bh]
+root        10     2  0 10:28 ?        00:00:00 [migration/0]
+root        11     2  0 10:28 ?        00:00:00 [watchdog/0]
+root        12     2  0 10:28 ?        00:00:00 [cpuhp/0]
+root        13     2  0 10:28 ?        00:00:00 [cpuhp/1]
+root        14     2  0 10:28 ?        00:00:00 [watchdog/1]
+root        15     2  0 10:28 ?        00:00:00 [migration/1]
+root        16     2  0 10:28 ?        00:00:00 [ksoftirqd/1]
+root        18     2  0 10:28 ?        00:00:00 [kworker/1:0H]
+root        19     2  0 10:28 ?        00:00:00 [cpuhp/2]
+root        20     2  0 10:28 ?        00:00:00 [watchdog/2]
+root        21     2  0 10:28 ?        00:00:00 [migration/2]
+root        22     2  0 10:28 ?        00:00:00 [ksoftirqd/2]
+root        24     2  0 10:28 ?        00:00:00 [kworker/2:0H]
+root        25     2  0 10:28 ?        00:00:00 [cpuhp/3]
+root        26     2  0 10:28 ?        00:00:00 [watchdog/3]
+root        27     2  0 10:28 ?        00:00:00 [migration/3]
+root        28     2  0 10:28 ?        00:00:00 [ksoftirqd/3]
+root        30     2  0 10:28 ?        00:00:00 [kworker/3:0H]
+root        31     2  0 10:28 ?        00:00:00 [kdevtmpfs]
+root        32     2  0 10:28 ?        00:00:00 [netns]
+root        33     2  0 10:28 ?        00:00:00 [rcu_tasks_kthre]
+root        34     2  0 10:28 ?        00:00:00 [kauditd]
+root        37     2  0 10:28 ?        00:00:00 [khungtaskd]
+root        38     2  0 10:28 ?        00:00:00 [oom_reaper]
+root        39     2  0 10:28 ?        00:00:00 [writeback]
+root        40     2  0 10:28 ?        00:00:00 [kcompactd0]
+root        41     2  0 10:28 ?        00:00:00 [ksmd]
+root        42     2  0 10:28 ?        00:00:00 [khugepaged]
+root        43     2  0 10:28 ?        00:00:00 [crypto]
+root        44     2  0 10:28 ?        00:00:00 [kintegrityd]
+root        45     2  0 10:28 ?        00:00:00 [kblockd]
+root        46     2  0 10:28 ?        00:00:00 [ata_sff]
+root        47     2  0 10:28 ?        00:00:00 [md]
+root        48     2  0 10:28 ?        00:00:00 [edac-poller]
+root        49     2  0 10:28 ?        00:00:00 [devfreq_wq]
+root        51     2  0 10:28 ?        00:00:00 [watchdogd]
+root        56     2  0 10:28 ?        00:00:00 [kswapd0]
+root        57     2  0 10:28 ?        00:00:00 [ecryptfs-kthrea]
+root        99     2  0 10:28 ?        00:00:00 [kthrotld]
+root       100     2  0 10:28 ?        00:00:00 [acpi_thermal_pm]
+root       105     2  0 10:28 ?        00:00:00 [ipv6_addrconf]
+root       115     2  0 10:28 ?        00:00:00 [kstrp]
+root       132     2  0 10:28 ?        00:00:00 [charger_manager]
+root       172     2  0 10:28 ?        00:00:00 [irq/16-mmc0]
+root       175     2  0 10:28 ?        00:00:00 [scsi_eh_0]
+root       176     2  0 10:28 ?        00:00:00 [scsi_tmf_0]
+root       178     2  0 10:28 ?        00:00:00 [scsi_eh_1]
+root       193     2  0 10:28 ?        00:00:00 [scsi_tmf_1]
+root       208     2  0 10:28 ?        00:00:00 [mmcqd/0]
+root       209     2  0 10:28 ?        00:00:00 [kworker/1:1H]
+root       210     2  0 10:28 ?        00:00:00 [kworker/2:1H]
+root       212     2  0 10:28 ?        00:00:00 [i915/signal:0]
+root       213     2  0 10:28 ?        00:00:00 [i915/signal:1]
+root       214     2  0 10:28 ?        00:00:00 [i915/signal:2]
+root       215     2  0 10:28 ?        00:00:00 [i915/signal:4]
+root       219     2  0 10:28 ?        00:00:00 [kworker/0:1H]
+root       245     2  0 10:28 ?        00:00:00 [raid5wq]
+root       291     2  0 10:28 ?        00:00:00 [jbd2/sda5-8]
+root       292     2  0 10:28 ?        00:00:00 [ext4-rsv-conver]
+root       329     1  0 10:28 ?        00:00:00 /lib/systemd/systemd-journald
+root       335     2  0 10:28 ?        00:00:00 [kworker/3:1H]
+root       350     1  0 10:28 ?        00:00:00 /sbin/lvmetad -f
+root       355     1  0 10:28 ?        00:00:00 /lib/systemd/systemd-udevd
+systemd+   386     1  0 10:28 ?        00:00:00 /lib/systemd/systemd-timesync
+root       522     1  0 10:28 ?        00:00:00 /lib/systemd/systemd-logind
+root       523     1  0 10:28 ?        00:00:00 /usr/lib/accountsservice/acco
+root       525     1  0 10:28 ?        00:00:00 /usr/sbin/cron -f
+root       526     2  0 10:28 ?        00:00:00 [irq/18-smo8800]
+root       527     1  0 10:28 ?        00:00:02 /usr/lib/deepin-daemon/dde-sy
+message+   532     1  0 10:28 ?        00:00:01 /usr/bin/dbus-daemon --system
+root       543     1  0 10:28 ?        00:00:00 /bin/sh /usr/bin/deepin-anyth
+root       544     1  0 10:28 ?        00:00:00 /usr/sbin/acpid
+root       545   543  0 10:28 ?        00:00:01 deepin-anything-tool --dbus
+root       546     1  0 10:28 ?        00:00:00 /usr/sbin/cupsd -l
+root       547     1  0 10:28 ?        00:00:00 /usr/sbin/NetworkManager --no
+root       551     1  0 10:28 ?        00:00:00 /usr/sbin/ModemManager
+root       599     1  0 10:28 ?        00:00:00 /usr/lib/policykit-1/polkitd 
+root       644     2  0 10:28 ?        00:00:00 [irq/49-mei_me]
+deepin-+   668     1  0 10:28 ?        00:00:00 /usr/bin/deepin-anything-moni
+root       681     1  0 10:28 ?        00:00:00 /usr/lib/udisks2/udisksd --no
+root       682     1  0 10:28 ?        00:00:00 /opt/pbis/sbin/lwsmd --start-
+root       712   682  0 10:28 ?        00:00:00 lw-container lwreg
+root       865     2  0 10:28 ?        00:00:00 [cfg80211]
+root      1028     1  0 10:28 ?        00:00:00 /usr/sbin/lightdm
+root      1072     2  0 10:28 ?        00:00:01 [irq/52-iwlwifi]
+root      1119  1028  0 10:28 tty1     00:00:37 /usr/lib/xorg/Xorg -backgroun
+root      1147   682  0 10:28 ?        00:00:00 lw-container eventlog
+root      1367   682  0 10:28 ?        00:00:00 lw-container netlogon
+root      1441     2  0 10:28 ?        00:00:00 [kworker/u9:1]
+root      1494   682  0 10:28 ?        00:00:00 lw-container lwio
+root      1586   682  0 10:28 ?        00:00:00 lw-container lsass
+root      1886     1  0 10:28 ?        00:00:00 /sbin/wpa_supplicant -u -s -O
+root      2178     2  0 10:28 ?        00:00:00 [kworker/u9:2]
+root      2277     1  0 10:28 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+root      2298   682  0 10:28 ?        00:00:00 lw-container reapsysl
+root      3420  1028  0 10:28 ?        00:00:00 lightdm --session-child 13 16
+lthoangg  3424     1  0 10:28 ?        00:00:00 /lib/systemd/systemd --user
+lthoangg  3425  3424  0 10:28 ?        00:00:00 (sd-pam)
+lthoangg  3433  3420  0 10:28 ?        00:00:02 /usr/bin/startdde
+lthoangg  3449     1  0 10:28 ?        00:00:00 dbus-launch --autolaunch 48c5
+lthoangg  3450     1  0 10:28 ?        00:00:00 /usr/bin/dbus-daemon --fork -
+lthoangg  3473     1  0 10:28 ?        00:00:00 /usr/bin/dbus-launch --exit-w
+lthoangg  3474     1  0 10:28 ?        00:00:01 /usr/bin/dbus-daemon --fork -
+lthoangg  3527     1  0 10:28 ?        00:00:00 /usr/bin/gnome-keyring-daemon
+lthoangg  3532  3433  0 10:28 ?        00:00:00 /bin/sh /usr/bin/kwin_no_scal
+lthoangg  3537  3532  0 10:28 ?        00:00:27 kwin_x11 -platform dde-kwin-x
+lthoangg  3542     1  0 10:28 ?        00:00:00 /usr/bin/deepin-wm-dbus
+lthoangg  3553     1  0 10:28 ?        00:00:00 /usr/bin/kglobalaccel5
+lthoangg  3559  3433  0 10:28 ?        00:00:00 /usr/lib/deepin-daemon/dde-os
+lthoangg  3560  3433  0 10:28 ?        00:00:05 /usr/lib/deepin-daemon/dde-se
+lthoangg  3583     1  0 10:28 ?        00:00:00 /usr/lib/deepin-sync-daemon/d
+root      3592     1  0 10:28 ?        00:00:00 /usr/lib/deepin-sync-daemon/d
+lthoangg  3612  3433  0 10:28 ?        00:00:03 /usr/bin/dde-dock
+lthoangg  3619  3433  0 10:28 ?        00:00:06 /usr/bin/dde-desktop
+lthoangg  3644     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfsd
+lthoangg  3649     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run
+lthoangg  3651     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-vo
+lthoangg  3665     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume
+lthoangg  3671     1  0 10:28 ?        00:00:00 /bin/bash /usr/lib/x86_64-lin
+lthoangg  3672  3671  0 10:28 ?        00:00:01 /usr/lib/x86_64-linux-gnu/bam
+lthoangg  3674     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume
+lthoangg  3679     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume
+lthoangg  3687     1  0 10:28 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-vo
+root      3698     1  0 10:28 ?        00:00:01 /sbin/mount.ntfs /dev/sda2 /m
+root      3704     1  0 10:28 ?        00:00:00 /sbin/mount.ntfs /dev/sda6 /m
+lthoangg  3717     1  0 10:28 ?        00:00:00 /usr/bin/pulseaudio --start -
+root      3753     1  0 10:28 ?        00:00:00 /usr/bin/lastore-daemon
+lthoangg  3762     1  0 10:28 ?        00:00:01 syndaemon -i 2 -K -t -d -p /t
+root      3772     2  0 10:28 ?        00:00:00 [krfcommd]
+root      3779     1  0 10:28 ?        00:00:00 /usr/bin/dde-file-manager-dae
+lthoangg  3784     1  0 10:28 ?        00:00:00 /usr/lib/dconf/dconf-service
+lthoangg  3794  3433  0 10:28 ?        00:00:00 /usr/lib/deepin-daemon/deepin
+root      3888   547  0 10:28 ?        00:00:00 /sbin/dhclient -d -q -sf /usr
+root      3895   547  0 10:28 ?        00:00:00 /sbin/dhclient -d -q -6 -N -s
+root      3915     1  0 10:28 ?        00:00:00 /usr/lib/ipsec/starter --daem
+root      3940     1  0 10:28 ?        00:00:00 /usr/sbin/nmbd
+root      3943  3915  0 10:28 ?        00:00:00 /usr/lib/ipsec/charon
+root      3960     1  0 10:28 ?        00:00:00 /usr/sbin/smbd
+root      3961  3960  0 10:28 ?        00:00:00 /usr/sbin/smbd
+root      3962  3960  0 10:28 ?        00:00:00 /usr/sbin/smbd
+root      3965  3960  0 10:28 ?        00:00:00 /usr/sbin/smbd
+lthoangg  3969  3433  0 10:28 ?        00:00:00 /usr/lib/polkit-1-dde/dde-pol
+lthoangg  3991     1  0 10:29 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+lthoangg  3995     1  0 10:29 ?        00:00:00 /usr/bin/dman-search
+lthoangg  4015     1  0 10:29 ?        00:00:03 /usr/bin/dde-launcher
+lthoangg  4026  3433  0 10:29 ?        00:00:00 /usr/bin/python3 /usr/share/s
+lthoangg  4148     1  0 10:31 ?        00:00:03 /usr/bin/dde-control-center
+lthoangg  4442     1  0 10:32 ?        00:00:00 /usr/lib/gvfs/gvfsd-computer 
+root      5528     2  0 11:10 ?        00:00:00 [kworker/0:1]
+root      5529     2  0 11:10 ?        00:00:00 [kworker/u8:1]
+root      5575     2  0 11:13 ?        00:00:00 [kworker/2:0]
+root      5674     2  0 11:16 ?        00:00:00 [kworker/1:3]
+root      5694     2  0 11:16 ?        00:00:00 [kworker/u8:2]
+root      5705     2  0 11:16 ?        00:00:00 [kworker/u8:5]
+lthoangg  5749  3433  0 11:17 ?        00:00:08 deepin-terminal
+lthoangg  5777  5749  0 11:17 pts/0    00:00:00 /bin/bash
+lthoangg  5786  3433  3 11:17 ?        00:00:44 /home/lthoangg/Downloads/fire
+lthoangg  5859  5786  0 11:17 ?        00:00:03 /home/lthoangg/Downloads/fire
+lthoangg  5908  5786  1 11:17 ?        00:00:15 /home/lthoangg/Downloads/fire
+lthoangg  5991  5786  0 11:17 ?        00:00:04 /home/lthoangg/Downloads/fire
+lthoangg  6282  3433  1 11:20 ?        00:00:11 /usr/share/code/code --unity-
+lthoangg  6296  6282  0 11:20 ?        00:00:00 /usr/share/code/code --type=z
+lthoangg  6331  6282  1 11:20 ?        00:00:12 /usr/share/code/code --type=g
+lthoangg  6408  6296  0 11:20 ?        00:00:01 /usr/share/code/code --type=r
+lthoangg  6431     1  0 11:20 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --s
+lthoangg  6444     1  0 11:20 ?        00:00:00 /usr/lib/gvfs/gvfsd-network -
+lthoangg  6450     1  0 11:20 ?        00:00:00 /usr/lib/gvfs/gvfsd-smb-brows
+root      6457  3960  0 11:20 ?        00:00:00 /usr/sbin/smbd
+lthoangg  6460     1  0 11:20 ?        00:00:00 /usr/lib/gvfs/gvfsd-dnssd --s
+lthoangg  6484  6296  2 11:20 ?        00:00:28 /usr/share/code/code --type=r
+lthoangg  6504  6484  0 11:20 ?        00:00:01 /usr/share/code/code --nolazy
+lthoangg  6505  6484  0 11:20 ?        00:00:00 /usr/share/code/code /usr/sha
+root      6562     2  0 11:21 ?        00:00:00 [kworker/3:2]
+root      6564     2  0 11:21 ?        00:00:00 [kworker/0:0]
+lthoangg  6612     1  0 11:22 ?        00:00:00 /usr/bin/deepin-menu
+root      6686     2  0 11:24 ?        00:00:00 [kworker/2:2]
+root      6756     2  0 11:26 ?        00:00:00 [kworker/3:0]
+root      6757     2  0 11:26 ?        00:00:00 [kworker/1:1]
+root      6759     2  0 11:27 ?        00:00:00 [kworker/0:2]
+root      6844     2  0 11:29 ?        00:00:00 [kworker/2:1]
+lthoangg  6886  5777  0 11:30 pts/0    00:00:00 grep list
+root      6940     2  0 11:32 ?        00:00:00 [kworker/3:1]
+root      6941     2  0 11:32 ?        00:00:00 [kworker/1:0]
+lthoangg  6955  5786 16 11:32 ?        00:00:41 /home/lthoangg/Downloads/fire
+root      7107     2  0 11:34 ?        00:00:00 [kworker/3:3]
+lthoangg  7109  5786  4 11:34 ?        00:00:06 /home/lthoangg/Downloads/fire
+lthoangg  7199  5786  2 11:36 ?        00:00:00 /home/lthoangg/Downloads/fire
+lthoangg  7246  5777  0 11:37 pts/0    00:00:00 ps -ef
+```
+
+Start a new process, gnome-calculator:
+```bash
+lthoangg@lthoangg-PC:~/Desktop/OS2020$ dde-calendar
+"dtkwidget2" can not find qm files
+"dde-calendar" can not find qm files
+2020-03-03, 11:48:41.347 [Warning] [dapplication.cpp     Dtk::Widget::DApplicationPrivate::loadTranslator 289] "dtkwidget2" can not find qm files
+2020-03-03, 11:48:41.347 [Warning] [dapplication.cpp     Dtk::Widget::DApplicationPrivate::loadTranslator 289] "dde-calendar" can not find qm files
+2020-03-03, 11:48:41.373 [Debug  ] [                                                         0] set current date  QDate("2020-03-03")
+2020-03-03, 11:48:41.377 [Debug  ] [                                                         0] set current date  QDate("2020-03-03")0] set current date  QDate("2020-03-03")
+```
+
+Find process id of my newly-created process:
+```bash
+lthoangg@lthoangg-PC:~/Desktop/OS2020$ ps -e | grep dde-calendar 
+ 9156
+ ```
+
+ Show its process status
+ ```bash
+ lthoangg@lthoangg-PC:~/Desktop/OS2020$ cat /proc/9156/status
+Name:	dde-calendar
+Umask:	0022
+State:	T (stopped)
+Tgid:	9156
+Ngid:	0
+Pid:	9156
+PPid:	5777
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+Groups:	7 27 100 109 113 119 123 997 998 1000 
+NStgid:	9156
+NSpid:	9156
+NSpgid:	9156
+NSsid:	5777
+VmPeak:	  777780 kB
+VmSize:	  777780 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   77952 kB
+VmRSS:	   77952 kB
+RssAnon:	   29452 kB
+RssFile:	   40192 kB
+RssShmem:	    8308 kB
+VmData:	   78336 kB
+VmStk:	     136 kB
+VmExe:	     208 kB
+VmLib:	   93744 kB
+VmPTE:	     804 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+Threads:	7
+SigQ:	0/31176
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000000001000
+SigCgt:	0000000180000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	vulnerable
+Cpus_allowed:	f
+Cpus_allowed_list:	0-3
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	719
+nonvoluntary_ctxt_switches:	31
+```
+
+Pause, resume and kill it:
+```bash
+lthoangg@lthoangg-PC:~/Desktop/OS2020$ kill -s stop 9156
+lthoangg@lthoangg-PC:~/Desktop/OS2020$ kill -s cont 9156
+lthoangg@lthoangg-PC:~/Desktop/OS2020$ kill -s kill 9156
+```
