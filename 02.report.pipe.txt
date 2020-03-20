@@ -1,5 +1,6 @@
 List all files in current directory containing <List> in their names:
-```bash
+```
+bash
 lthoangg@lthoangg-PC:~/Desktop/OS2020$ ls | grep list
 lthoangg@lthoangg-PC:~/Desktop/OS2020$ ls
 01.report.shell.commands.md   02.report.pipe.txt
@@ -7,13 +8,15 @@ lthoangg@lthoangg-PC:~/Desktop/OS2020$ ls
 ```
 
 Count how many lines that /etc/passwd has:
-```bash
+```
+bash
 lthoangg@lthoangg-PC:~/Desktop/OS2020$ wc -l /etc/passwd
 37 /etc/passwd
 ```
 
 Check how much memory that your machine has, not free memmory:
-```bash
+```
+bash
 lthoangg@lthoangg-PC:~/Desktop/OS2020$ free total
               total        used        free      shared  buff/cache   available
 Mem:        8038248     1556056     4434212      193976     2047980     6053836
@@ -21,14 +24,15 @@ Swap:       4194300           0     4194300
 ```
 
 Find how many logical core that your CPU has:
-```bash
+```
+bash
 lthoangg@lthoangg-PC:~/Desktop/OS2020$ cat /proc/cpuinfo | grep 'cpu cores' | head -1
 cpu cores	: 2
 ```
 
 Count how many .jpg files that you have in your photo directory:
-```bash
+```
+bash
 lthoangg@lthoangg-PC:~/Desktop/OS2020$ find *.jpg | wc -l
 0
-
 ```
