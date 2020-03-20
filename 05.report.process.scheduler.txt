@@ -1,5 +1,4 @@
 Input: cat /proc/sched_debug | grep ".nr_switches" 
-
 Output:
 
 ```bash
@@ -13,6 +12,7 @@ Input: cat /proc/1/sched
 Output:
 
 ```
+
 systemd (1, #threads: 1)
 -------------------------------------------------------------------
 se.exec_start                                :       1823694.896308
@@ -42,13 +42,16 @@ numa_preferred_nid                           :                   -1
 total_numa_faults                            :                    0
 current_node=0, numa_group_id=0
 numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+
 ```
 
 Input: cat /proc/1515/sched | grep "switches"
 Output:
 
 ```
+
 nr_switches                                  :                   22
 nr_voluntary_switches                        :                   20
 nr_involuntary_switches                      :                    2
+
 ```
