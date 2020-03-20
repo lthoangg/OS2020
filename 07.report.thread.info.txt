@@ -1,0 +1,10 @@
+Input: ps-o nlwp 2381
+Output:
+NLWP
+  28
+
+Input: ls -l /proc/2381/task | grep -c ^d
+Output: 28
+
+Input: ls -l /proc/2381/task | wc -l
+Output: 29
