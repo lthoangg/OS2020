@@ -1,10 +1,8 @@
-Input: ps-o nlwp 2381
+Input: ps -o nlwp $(pidof firefox)
 Output:
 NLWP
+  65
+  26
+  26
   28
-
-Input: ls -l /proc/2381/task | grep -c ^d
-Output: 28
-
-Input: ls -l /proc/2381/task | wc -l
-Output: 29
+  21
