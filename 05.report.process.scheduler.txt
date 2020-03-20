@@ -1,51 +1,51 @@
-Input: cat /proc/sched_debug
+Input: cat /proc/sched_debug | grep ".nr_switches" 
+
 Output:
 '''
-S           code  2675      8011.067171       734   120         0.000000        24.081045         0.000000 0 0 /autogroup-195
- S    Web Content  2730     27672.220981     12775   120         0.000000     13193.666493         0.000000 0 0 /autogroup-154
- S   dconf worker  2738      6654.740389        27   120         0.000000         3.467156         0.000000 0 0 /autogroup-154
-S      JS Helper  2750     27542.825797       914   120         0.000000       235.482005         0.000000 0 0 /autogroup-154
- S      JS Helper  2751     27517.999559       795   120         0.000000       250.348023         0.000000 0 0 /autogroup-154
- S    RemVidChild  2760      6769.918426         2   120         0.000000         0.053848         0.000000 0 0 /autogroup-154
- S   HTML5 Parser  3074     23801.259742        54   120         0.000000         8.167253         0.000000 0 0 /autogroup-154
- S          gdbus  2924         0.737546        10   120         0.000000         0.738212         0.000000 0 0 /autogroup-197
- SWorker Launcher  3066     20707.201279         7   120         0.000000         0.176324         0.000000 0 0 /autogroup-154
- SImageBr~geChild  3070     20707.181890         4   120         0.000000         0.094193         0.000000 0 0 /autogroup-154
- S ProcessHangMon  3072     20708.402864         4   120         0.000000         0.108393         0.000000 0 0 /autogroup-154
- I    kworker/3:2  3094    151717.293985     24036   120         0.000000       559.595904         0.000000 0 0 /
- I    kworker/3:0  3238    137372.391705        43   120         0.000000         1.456057         0.000000 0 0 /
+  .nr_switches                   : 886325
+  .nr_switches                   : 834130
+  .nr_switches                   : 861780
+  .nr_switches                   : 933911
 '''
 
-Input: cat /proc/2675/sched 
+Input: cat /proc/1/sched 
 Output:
 '''
-code (2675, #threads: 18)
+systemd (1, #threads: 1)
 -------------------------------------------------------------------
-se.exec_start                                :       1590385.136582
-se.vruntime                                  :          8498.498832
-se.sum_exec_runtime                          :            24.443431
-se.nr_migrations                             :                   57
-nr_switches                                  :                  744
-nr_voluntary_switches                        :                  743
-nr_involuntary_switches                      :                    1
+se.exec_start                                :       1823694.896308
+se.vruntime                                  :           819.944007
+se.sum_exec_runtime                          :          2559.546176
+se.nr_migrations                             :                 6677
+nr_switches                                  :                31407
+nr_voluntary_switches                        :                29966
+nr_involuntary_switches                      :                 1441
 se.load.weight                               :              1048576
 se.runnable_weight                           :              1048576
-se.avg.load_sum                              :                   40
-se.avg.runnable_load_sum                     :                   40
-se.avg.util_sum                              :                40960
+se.avg.load_sum                              :                   50
+se.avg.runnable_load_sum                     :                   50
+se.avg.util_sum                              :                52943
 se.avg.load_avg                              :                    0
 se.avg.runnable_load_avg                     :                    0
 se.avg.util_avg                              :                    0
-se.avg.last_update_time                      :        1590385135616
-se.avg.util_est.ewma                         :                   10
-se.avg.util_est.enqueued                     :                    0
+se.avg.last_update_time                      :        1823694896128
+se.avg.util_est.ewma                         :                    9
+se.avg.util_est.enqueued                     :                    8
 policy                                       :                    0
 prio                                         :                  120
-clock-delta                                  :                   65
+clock-delta                                  :                   50
 mm->numa_scan_seq                            :                    0
 numa_pages_migrated                          :                    0
 numa_preferred_nid                           :                   -1
 total_numa_faults                            :                    0
 current_node=0, numa_group_id=0
 numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+'''
+
+Input: cat /proc/1515/sched | grep "switches"
+Output:
+'''
+nr_switches                                  :                   22
+nr_voluntary_switches                        :                   20
+nr_involuntary_switches                      :                    2
 '''
